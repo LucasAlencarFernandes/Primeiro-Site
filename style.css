@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #ff0000;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.quadrado{
+    height: 200px;
+    width: 100px;
+    background-color: #0568fc;
+    border: 1px #b9d5ff solid;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+
+#container {
+    background-color: #00122c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    color: white;
+    text-align: center;git
+button{
+        width: 400px;
+        height: 50px;
+}
+
+h2{
+    color: white;
+}
+img{
+    height: 400px;
+    width: 400px;
+}
