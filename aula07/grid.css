@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns:repeat(5,50px);
+    grid-template-rows: 100px 100px 100px;
+}
+
+.item-1 {
+    background-color: rgb(1, 231, 154);
+    grid-row:1/4;
+    grid-column: 1/90;
+}
+
+.item-2 {
+    background-color: blueviolet;
+    grid-column: ;
+}
+
+.item-3 {
+    background-color: rgb(245, 214, 147);
+}
