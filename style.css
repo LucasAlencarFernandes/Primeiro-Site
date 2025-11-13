@@ -1,46 +1,130 @@
-*{
-    margin: 0;
-}
+/* =========================================================
+   IMPORTAÇÃO DE FONTES E CONFIGURAÇÕES GLOBAIS
+   ========================================================= */
+   @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 
-header{
-    background-color: #ff0000;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
-.quadrado{
-    height: 200px;
-    width: 100px;
-    background-color: #0568fc;
-    border: 1px #b9d5ff solid;
-    margin: 20px;
-    box-sizing: border-box;
-
-}
-
-#container {
-    background-color: #00122c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-    color: white;
-    text-align: center;git
-button{
-        width: 400px;
-        height: 50px;
-}
-
-h2{
-    color: white;
-}
-img{
-    height: 400px;
-    width: 400px;
-}
-a:link{
-    color: yellow;
-}
+   /* Reset básico */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   /* Corpo do site */
+   body {
+     font-family: "Geologica", sans-serif;
+     background-color: #E8D6CB;
+     color: #333;
+     line-height: 1.6;
+   }
+   
+   /* =========================================================
+      LAYOUT GERAL E CONTAINERS
+      ========================================================= */
+   #container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     padding: 40px 20px;
+   }
+   
+   /* =========================================================
+      COMPONENTES ESPECÍFICOS
+      ========================================================= */
+   
+   /* Cartão principal */
+   .card {
+     width: 420px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+   
+     /* Estilo visual */
+     background-color: #ffffff;
+     border-radius: 0 0 25px 25px; /* arredonda apenas embaixo */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+   
+     /* Transição suave ao passar o mouse */
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   
+   .card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+   }
+   
+   /* Imagens dentro do card */
+   .card img {
+     width: 100%;
+     height: auto;
+     display: block;
+     border-bottom: 1px solid #eee;
+   }
+   
+   /* =========================================================
+      TIPOGRAFIA
+      ========================================================= */
+   
+   /* Títulos principais */
+   h1, h2, h3 {
+     color: #2E1C0E;
+     text-align: center;
+     margin-bottom: 15px;
+   }
+   
+   /* Parágrafos */
+   p {
+     max-width: 600px;
+     margin: 10px auto;
+     text-align: center;
+     font-size: 1rem;
+   }
+   
+   /* =========================================================
+      BOTÕES E INTERATIVIDADE
+      ========================================================= */
+   button {
+     background: linear-gradient(135deg, #A1683A, #D49A6A);
+     color: #fff;
+     border: none;
+     padding: 10px 25px;
+     border-radius: 50px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background 0.3s ease, transform 0.2s ease;
+   }
+   
+   button:hover {
+     background: linear-gradient(135deg, #8E552D, #BF8555);
+     transform: scale(1.05);
+   }
+   
+   /* =========================================================
+      RODAPÉ
+      ========================================================= */
+   footer {
+     text-align: center;
+     padding: 20px;
+     font-size: 0.9rem;
+     color: #5a3e2b;
+     background-color: #E0C9B6;
+     margin-top: 40px;
+   }
+   
+   /* =========================================================
+      RESPONSIVIDADE
+      ========================================================= */
+   @media (max-width: 600px) {
+     .card {
+       width: 90%;
+     }
+   
+     p {
+       font-size: 0.95rem;
+     }
+   }
+   

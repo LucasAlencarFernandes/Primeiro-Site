@@ -24,3 +24,40 @@
 .item-3 {
     background-color: rgb(245, 214, 147);
 }
+
+<section class="banner">
+                <img src="assets img/download.png" alt="Gato fotogenico do banner">
+                <p class="texto-foco">Adote um gatinho, Ganhe um Amigo pra Vida</p>
+                <p class="texto-secundário">Leve um Amor pra Casa</p>
+            </section>
+
+
+(max-width:768px)
+
+
+/* --cor-pricipal: #bee9e8ff; */
+    /* --cor-segundaria: #62b6cbff;
+    --cor-terciaria: #1b4965ff;
+    --destaque: #cae9ffff;
+    --destaque-escuro: #5fa8d3ff;
+ */
+
+
+@media screen and (max-width: 430px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .banner2 {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
